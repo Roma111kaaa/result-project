@@ -15,7 +15,7 @@ btn.addEventListener("click", result)
 
 function result() {
   if (document.querySelector("#i_am_not_a_clown input").checked) {
-    window.location.href = "questions/first.html"
+    window.location.replace("questions/first.html")
   } else {
     let name = ""
     name = prompt("ПОЗДРАВЛЯЕМ! ВЫ КЛОУН!\nВведите ваше клоунское имя:")

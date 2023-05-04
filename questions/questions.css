@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: red;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+#form {
+  list-style-type: none;
+}
+
+#form li {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+#responce {
+  margin: 0 auto;
+  display: block;
+  font-size: 50px;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
