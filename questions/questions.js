@@ -16,7 +16,7 @@ orange.addEventListener("click", (event) => body.style.background = "red")
 let counter = 1;
 
 btn.addEventListener("click", function() {
-  if (counter > 2) {
+  if (counter > 10) {
     document.getElementById("what_is").textContent = "УРАААА"
     alert("Поздравляем, вы не клоун!")
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
