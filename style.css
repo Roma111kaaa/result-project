@@ -1,3 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #fff;
+}
+
+main {
+  position: relative;
+}
+
+#list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+
+}
+
+#main_text {
+  font-size: 50px;
+  position: absolute;
+  margin-top: -120px;
+}
+
 .container {
-  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#start_button {
+  text-decoration: none;
+  padding: 10px 30px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+  background-color: inherit;
+}
+
+#start_button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+
+#start_button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+
+#start_button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+
+#i_am_not_a_clown {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  transition: all .5s;
+}
+
+#i_am_not_a_clown input {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#i_am_not_a_clown:hover {
+  color: black;
+}
+#i_am_not_a_clown:hover input {
+  opacity: 1;
+}
+
+#clown_small {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  margin-left: -740px;
+  transition: 2s;
+}
+
+#i_am_not_a_clown:hover + #clown_small {
+  margin-left: -500px;
 }
